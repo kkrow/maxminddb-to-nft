@@ -5,6 +5,9 @@ on:
     - cron: 1 0 * * 0/2
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build-and-release:
     runs-on: ubuntu-latest
